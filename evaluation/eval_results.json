@@ -1,0 +1,282 @@
+{
+  "summary": {
+    "overall_accuracy": 0.629,
+    "pass_rate": "12/15",
+    "avg_response_time_sec": 2.337,
+    "total_time_sec": 35.051,
+    "document_load_time_sec": 25.518,
+    "index_build_time_sec": 86.79,
+    "cost": "$0.00"
+  },
+  "category_scores": {
+    "amount_extraction": 0.933,
+    "field_extraction": 0.579,
+    "entity_extraction": 0.55,
+    "detail_extraction": 0.25,
+    "analysis": 0.5,
+    "summarization": 1.0,
+    "anomaly": 0.5
+  },
+  "results": [
+    {
+      "id": 1,
+      "question": "What is the total amount of the invoice?",
+      "category": "amount_extraction",
+      "score": 1.0,
+      "response_time": 23.842413663864136,
+      "matched_keywords": [
+        "total",
+        "amount",
+        "$",
+        "sum"
+      ],
+      "missed_keywords": [],
+      "answer_preview": "The total amount of the invoice is $6,204.19. This information can be found in the **Summary** section of the billing document.\n\nHere's the breakdown:",
+      "error": null
+    },
+    {
+      "id": 2,
+      "question": "What is the invoice number?",
+      "category": "field_extraction",
+      "score": 0.6666666666666666,
+      "response_time": 0.36006617546081543,
+      "matched_keywords": [
+        "invoice",
+        "number"
+      ],
+      "missed_keywords": [
+        "no"
+      ],
+      "answer_preview": "The invoice number is **51109338**, as stated in the **Invoice Information** section of the billing document.\n\nYou might want to ask:\n1. What is the d",
+      "error": null
+    },
+    {
+      "id": 3,
+      "question": "Who is the seller or provider?",
+      "category": "entity_extraction",
+      "score": 0.5,
+      "response_time": 0.4792029857635498,
+      "matched_keywords": [
+        "seller",
+        "provider"
+      ],
+      "missed_keywords": [
+        "company",
+        "from"
+      ],
+      "answer_preview": "The seller or provider is **Andrews, Kirby and Valdez**, located at **58861 Gonz\u00e1lez Prairie, Lake Daniellefurt, IN 57228**. Their Tax Id is **945-82-",
+      "error": null
+    },
+    {
+      "id": 4,
+      "question": "Who is the buyer or client?",
+      "category": "entity_extraction",
+      "score": 0.75,
+      "response_time": 0.4382312297821045,
+      "matched_keywords": [
+        "buyer",
+        "client",
+        "to"
+      ],
+      "missed_keywords": [
+        "customer"
+      ],
+      "answer_preview": "The buyer or client is Becker Ltd, located at 8012 Stewart Summit Apt. 455, North Douglas, AZ 95355, with Tax Id: 942-80-0517.\n\nThis information can b",
+      "error": null
+    },
+    {
+      "id": 5,
+      "question": "What is the date of the invoice?",
+      "category": "field_extraction",
+      "score": 0.5,
+      "response_time": 0.2886030673980713,
+      "matched_keywords": [
+        "date",
+        "/"
+      ],
+      "missed_keywords": [
+        "issued",
+        "-"
+      ],
+      "answer_preview": "The date of the invoice is **04/13/2013**, as indicated in the **Invoice Information** section of the billing document.",
+      "error": null
+    },
+    {
+      "id": 6,
+      "question": "What is the tax or VAT amount?",
+      "category": "amount_extraction",
+      "score": 0.8,
+      "response_time": 0.5583796501159668,
+      "matched_keywords": [
+        "tax",
+        "VAT",
+        "%",
+        "amount"
+      ],
+      "missed_keywords": [
+        "GST"
+      ],
+      "answer_preview": "The tax or VAT amount is $564.02. This information can be found in the **Summary** section of the billing document.\n\nHere's the breakdown:\n\n* Net wort",
+      "error": null
+    },
+    {
+      "id": 7,
+      "question": "List all the line items on the bill",
+      "category": "detail_extraction",
+      "score": 0.25,
+      "response_time": 1.595583200454712,
+      "matched_keywords": [
+        "item"
+      ],
+      "missed_keywords": [
+        "description",
+        "product",
+        "service"
+      ],
+      "answer_preview": "Here are the line items on the bill:\n\nThe line items can be found in the **Items** section of the billing document. Here are the details:\n\n1. **CLEARA",
+      "error": null
+    },
+    {
+      "id": 8,
+      "question": "What is the most expensive item on the invoice?",
+      "category": "analysis",
+      "score": 0.6,
+      "response_time": 1.9281904697418213,
+      "matched_keywords": [
+        "expensive",
+        "most",
+        "$"
+      ],
+      "missed_keywords": [
+        "highest",
+        "max"
+      ],
+      "answer_preview": "To find the most expensive item on the invoice, I will review the \"Items\" section of the billing document.\n\nThe items listed are as follows:\n\n| No. | ",
+      "error": null
+    },
+    {
+      "id": 9,
+      "question": "Are there any discounts applied?",
+      "category": "analysis",
+      "score": 0.4,
+      "response_time": 0.7100803852081299,
+      "matched_keywords": [
+        "discount",
+        "no discount"
+      ],
+      "missed_keywords": [
+        "off",
+        "reduction",
+        "not found"
+      ],
+      "answer_preview": "There are no discounts explicitly mentioned in the invoice. The prices listed for each item appear to be the net prices, and the VAT (Value-Added Tax)",
+      "error": null
+    },
+    {
+      "id": 10,
+      "question": "What is the subtotal before tax?",
+      "category": "amount_extraction",
+      "score": 1.0,
+      "response_time": 0.7216687202453613,
+      "matched_keywords": [
+        "subtotal",
+        "before tax",
+        "net",
+        "$"
+      ],
+      "missed_keywords": [],
+      "answer_preview": "The subtotal before tax, also known as the Net worth, is $5,640.17. This information can be found in the **Summary** section of the billing document.\n",
+      "error": null
+    },
+    {
+      "id": 11,
+      "question": "What payment method or terms are mentioned?",
+      "category": "field_extraction",
+      "score": 0.5714285714285714,
+      "response_time": 0.5573983192443848,
+      "matched_keywords": [
+        "payment",
+        "due",
+        "terms",
+        "bank"
+      ],
+      "missed_keywords": [
+        "transfer",
+        "not found",
+        "not mentioned"
+      ],
+      "answer_preview": "The payment method or terms are not explicitly mentioned in the provided billing document. \n\nHowever, the document does provide the following informat",
+      "error": null
+    },
+    {
+      "id": 12,
+      "question": "Summarize this bill in 3 sentences",
+      "category": "summarization",
+      "score": 1.0,
+      "response_time": 0.9185924530029297,
+      "matched_keywords": [
+        "invoice",
+        "total",
+        "from",
+        "to"
+      ],
+      "missed_keywords": [],
+      "answer_preview": "Here is a summary of the bill in 3 sentences:\n\nThe invoice, numbered 51109338, was issued on April 13, 2013, to Becker Ltd by Andrews, Kirby and Valde",
+      "error": null
+    },
+    {
+      "id": 13,
+      "question": "Are there any unusually high charges?",
+      "category": "anomaly",
+      "score": 0.5,
+      "response_time": 1.3227472305297852,
+      "matched_keywords": [
+        "high",
+        "unusual",
+        "charge"
+      ],
+      "missed_keywords": [
+        "expensive",
+        "normal",
+        "no unusual"
+      ],
+      "answer_preview": "To determine if there are any unusually high charges, let's examine the charges for each item listed on the invoice.\n\nThe items and their respective n",
+      "error": null
+    },
+    {
+      "id": 14,
+      "question": "What is the billing address of the seller?",
+      "category": "entity_extraction",
+      "score": 0.4,
+      "response_time": 0.4837169647216797,
+      "matched_keywords": [
+        "address",
+        "city"
+      ],
+      "missed_keywords": [
+        "street",
+        "state",
+        "zip"
+      ],
+      "answer_preview": "The billing address of the seller is:\n\nAndrews, Kirby and Valdez\n58861 Gonz\u00e1lez Prairie\nLake Daniellefurt, IN 57228\n\nThis information can be found in ",
+      "error": null
+    },
+    {
+      "id": 15,
+      "question": "How many items are on this invoice?",
+      "category": "analysis",
+      "score": 0.5,
+      "response_time": 0.8458385467529297,
+      "matched_keywords": [
+        "items",
+        "total"
+      ],
+      "missed_keywords": [
+        "products",
+        "line"
+      ],
+      "answer_preview": "There are 7 items listed on this invoice. \n\nHere are the items listed:\n\n1. CLEARANCE Fast Dell Desktop Computer PC DUAL CORE WINDOWS 10 4/8/16GB RAM (",
+      "error": null
+    }
+  ]
+}

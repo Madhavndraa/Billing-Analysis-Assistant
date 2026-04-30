@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "What is the total amount of the invoice?",
+    "expected_keywords": ["total", "amount", "$", "sum"],
+    "category": "amount_extraction"
+  },
+  {
+    "id": 2,
+    "question": "What is the invoice number?",
+    "expected_keywords": ["invoice", "number", "no"],
+    "category": "field_extraction"
+  },
+  {
+    "id": 3,
+    "question": "Who is the seller or provider?",
+    "expected_keywords": ["seller", "company", "provider", "from"],
+    "category": "entity_extraction"
+  },
+  {
+    "id": 4,
+    "question": "Who is the buyer or client?",
+    "expected_keywords": ["buyer", "client", "customer", "to"],
+    "category": "entity_extraction"
+  },
+  {
+    "id": 5,
+    "question": "What is the date of the invoice?",
+    "expected_keywords": ["date", "issued", "/", "-"],
+    "category": "field_extraction"
+  },
+  {
+    "id": 6,
+    "question": "What is the tax or VAT amount?",
+    "expected_keywords": ["tax", "VAT", "GST", "%", "amount"],
+    "category": "amount_extraction"
+  },
+  {
+    "id": 7,
+    "question": "List all the line items on the bill",
+    "expected_keywords": ["item", "description", "product", "service"],
+    "category": "detail_extraction"
+  },
+  {
+    "id": 8,
+    "question": "What is the most expensive item on the invoice?",
+    "expected_keywords": ["highest", "expensive", "most", "max", "$"],
+    "category": "analysis"
+  },
+  {
+    "id": 9,
+    "question": "Are there any discounts applied?",
+    "expected_keywords": ["discount", "off", "reduction", "no discount", "not found"],
+    "category": "analysis"
+  },
+  {
+    "id": 10,
+    "question": "What is the subtotal before tax?",
+    "expected_keywords": ["subtotal", "before tax", "net", "$"],
+    "category": "amount_extraction"
+  },
+  {
+    "id": 11,
+    "question": "What payment method or terms are mentioned?",
+    "expected_keywords": ["payment", "due", "terms", "bank", "transfer", "not found", "not mentioned"],
+    "category": "field_extraction"
+  },
+  {
+    "id": 12,
+    "question": "Summarize this bill in 3 sentences",
+    "expected_keywords": ["invoice", "total", "from", "to"],
+    "category": "summarization"
+  },
+  {
+    "id": 13,
+    "question": "Are there any unusually high charges?",
+    "expected_keywords": ["high", "unusual", "charge", "expensive", "normal", "no unusual"],
+    "category": "anomaly"
+  },
+  {
+    "id": 14,
+    "question": "What is the billing address of the seller?",
+    "expected_keywords": ["address", "street", "city", "state", "zip"],
+    "category": "entity_extraction"
+  },
+  {
+    "id": 15,
+    "question": "How many items are on this invoice?",
+    "expected_keywords": ["items", "products", "line", "total"],
+    "category": "analysis"
+  }
+]
